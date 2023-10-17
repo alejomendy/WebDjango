@@ -1,0 +1,26 @@
+{%extends 'app/base.html' %}
+
+{% block index %}
+<div class="bg-warning" style="margin-top: -15px;">
+    <div class="container text-center">
+        <div class="row">
+            <br>
+            <div class="col-6 offset-md-3">
+                <div class="card mt-5">
+                    <div class="card-body rounded bg-dark text-light">
+                        <h1>Register</h1>
+                        <hr>
+                        <form action="" class="" method="post">
+                            {% csrf_token %}
+                            {{ form }}
+                            <hr>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>                       
+                        </form>
+                    {{mensaje}}
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
